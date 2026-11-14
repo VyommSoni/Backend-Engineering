@@ -1,0 +1,22 @@
+[project]
+name = "authentication-and-authorisation"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "vyomsoni", email = "svyom21@gmail.com" }
+]
+requires-python = ">=3.10"
+dependencies = [
+    "bcrypt>=5.0.0",
+    "fastapi>=0.162.4",
+    "passlib>=1.7.4",
+    "uvicorn>=0.54.0",
+]
+
+[project.scripts]
+authentication-and-authorisation = "authentication_and_authorisation:main"
+
+[build-system]
+requires = ["uv_build>=0.12.7,<0.13.0"]
+build-backend = "uv_build"

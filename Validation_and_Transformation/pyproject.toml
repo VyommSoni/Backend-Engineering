@@ -1,0 +1,21 @@
+[project]
+name = "validation-and-transformation"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "vyomsoni", email = "svyom21@gmail.com" }
+]
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi[email]>=0.162.5",
+    "pydantic>=2.14.3",
+    "uvicorn>=0.54.0",
+]
+
+[project.scripts]
+validation-and-transformation = "validation_and_transformation:main"
+
+[build-system]
+requires = ["uv_build>=0.12.7,<0.13.0"]
+build-backend = "uv_build"
